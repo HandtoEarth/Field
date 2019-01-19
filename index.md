@@ -5,7 +5,7 @@ ownCloud 10.0.10
 
 **Author:** *Suzanne Burns* 
 
-# Overview 
+# 1. Overview 
 
 This Quick Start Guide is a step-by-step guide for system administrators to install and configure *lorem ipsum* After completing this guide, you will *lorem ipsum* which can be scaled ed and further configured as needed.     
 
@@ -15,15 +15,15 @@ The document takes you through the following tasks:
 + Lorem ipsum
 + Lorem ipsum
 
-## Prerequisites
+## 1.1 Prerequisites
 
 Lorem ipsum
 
-## We would love your feedback!
+## 1.2 We would love your feedback!
 
 If you have a suggestion for improving the documentation, we would love to hear from you! 
 
-# Installing ownCloud 
+# 2. Installing ownCloud 
 
 Lorem ipsum
 
