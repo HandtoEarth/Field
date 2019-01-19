@@ -63,6 +63,9 @@ Lorem ipsum
 
 Lorem ipsum
 
-# 5. For the User: Accessing the Server
+# 5. Logging into the Server
+
+Once you have created the user account, the user will be able to log in and access the server. All the user needs is *lorem ipsum* is a Linux client running Mozilla Firefox or a Windows client running Internet Explorer. 
 
 Lorem ipsum
+
