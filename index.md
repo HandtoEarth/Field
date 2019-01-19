@@ -6,61 +6,41 @@ ownCloud 10.0.10: A Quick Start Guide
 
 # 1. Overview 
 
-ownCloud is a file sharing server that puts the control and security of your own data back into your hands. 
+ownCloud is a file sharing server that puts the control and security of your own data back into your hands. ownCloud includes the ownCloud server, which runs on Linux, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.
 
-This quick start is written for system administrators, and serves as a step-by-step guide to installing and configuring it on Linux from ownCloud's Open Build Service packages. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. 
+This quick start is written for system administrators, and serves as a step-by-step guide to installing and configuring it from ownCloud's Open Build Service packages. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. 
 
-After completing this guide, you will *lorem ipsum* which can be further configured as needed. 
+The document takes you through the following:  
 
-The document takes you through the following tasks:  
-
-+ Lorem ipsum
-+ Lorem ipsum
-+ Lorem ipsum
-
-## 1.2 We would love your feedback!
-
-If you have a suggestion for improving the documentation, we would love to hear from you! 
++ Installing ownCloud on Linux
++ Setting Up the Proxy Server 
++ Setting Up a User in ownCloud
++ Logging in as a User
 
 # 2. Installing ownCloud 
 
+1. Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. It only installs ownCloud however, and does not install Apache, a database, or any of the required PHP dependencies. These must be installed using a classic LAMP stack. See Linux Package Manager Installation for more information about package managers. 
 
-## 1.1 Prerequisites
+2. If there are no packages for your Linux distribution, or you prefer installing from the source tarball, you may prefer to install from source using a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP). This allows you to create your own custom LAMP stack without dependency conflicts with the ownCloud package. See *Manual Installation on Linux* for a step by step guide to installing your own LAMP stack.  
+3. After you have installed the LAMP stack, you must then update the package manager's configuration. Configurations (http://download.owncloud.org/download/repositories/10.0/owncloud/) are available for the following Linux distributions:
 
-Lorem ipsum 
+   + Ubuntu 14.04 & 16.04
+   + Debian 7 & 8
+   + RHEL 6 & 7
+   + CentOS 7.2 & 7.3
+   + SLES 11SP4 & 12SP2
+   + openSUSE Leap 42.2 & 42.3
 
-Lorem ipsum
+4.  Once your package manager has been updated, follow the rest of the instructions included in the configuration to install ownCloud. 
+5.  When the ownCloud prerequisites are fulfilled and all ownCloud files are installed, the last step to completing the installation is running the Installation Wizard. This involves just three steps:
 
-+ See Linux Package Manager Installation for more information about package managers. The recommended package to use is *owncloud-files*. It only installs ownCloud, but does not install Apache, a database, or any of the required PHP dependencies. 
-+ If there are no packages for your Linux distribution, or you prefer installing from the source tarball, you can setup ownCloud from scratch using a classic LAMP stack (Linux, Apache, MySQL/MariaDB, PHP). See *Manual Installation on Linux* for more information about lorem ipsum.
+   1. Point your web browser to http://localhost/owncloud
+   2. Enter your desired administrator’s username and password.
+   3. Click “Finish Setup”.
 
-## 2.1 Configure Apache Web Server
+> Warning: If you are planning to use the installation wizard, we strongly encourage you to protect it, through some form of password authentication, or access control. If the installer is left unprotected when exposed to the public internet, there is the possibility that a malicious actor could finish the installation and block you out — or worse. So please ensure that only you — or someone from your organization — can access the web installer. 
 
-Lorem ipsum
-
-### 2.1.1 Additional Apache Configurations
-
-Lorem ipsum
-
-### 2.1.2 Multi-Processing Module (MPM)
-
-Lorem ipsum
-
-## 2.2 Enable SSL
-
-Lorem ipsum
-
-## 2.3 Run the Installation Wizard
-
-Lorem ipsum
-
-## 2.4 Set Strong Directory Permissions
-
-Lorem ipsum
-
-## 2.5 Managing Trusted Domains
-
-Lorem ipsum
+5. You’re now finished and can start using your new ownCloud server! Of course, there is much more that you can do to set up your ownCloud server for best performance and security. The Admistration Manual provides in-depth instructions that covers cover important installation and post-installation steps. https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html#in-depth-guide
 
 # 3. Setting Up the Proxy Server 
 
@@ -70,7 +50,7 @@ Lorem ipsum
 
 Lorem ipsum
 
-# 5. Logging into the Server
+# 5. Logging in as a User
 
 Once you have created the user account, the user will be able to log in and access the server. All the user needs is *lorem ipsum* is a Linux client running Mozilla Firefox or a Windows client running Internet Explorer. 
 
