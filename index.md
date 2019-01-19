@@ -15,7 +15,7 @@ The document takes you through the following:
 + Installing ownCloud on Linux
 + Setting Up the Proxy Server 
 + Setting Up a User in ownCloud
-+ Connecting to the Owncloud Server Using the Desktop Client
++ Installing the Desktop Synchronization Client and Connecting to the ownCloud Server
 
 # Installing ownCloud 
 
