@@ -15,7 +15,7 @@ The document takes you through the following:
 + Installing ownCloud on Linux
 + Setting Up the Proxy Server 
 + Setting Up a User in ownCloud
-+ Installing the Desktop Synchronization Client and Connecting to the ownCloud Server
++ Installing the Desktop Synchronization Client 
 
 # Installing ownCloud 
 
@@ -69,7 +69,9 @@ User accounts have the following properties:
 
 To create a new user account: 
 1. Enter the new user’s Login Name and their initial Password. 
+
 > Login names may contain letters, numbers, dashes, underscores, periods, and @ signs. After creating the user, you can fill in their Full Name if it is different than the login name, or leave it for the user to complete. 
+
 2. Assign Groups memberships as needed.
 3. Click the Create button.  
 
@@ -77,9 +79,9 @@ If you select Send email to new user in the control panel on the lower left side
 
 See User Management for in-depth information about user management. https://doc.owncloud.org/server/9.1/admin_manual/configuration_user/user_configuration.html 
 
-# Connecting to the Owncloud Server Using the Desktop Client
+# Installing the Desktop Synchronization Client
 
-Once you have created the user account, the user can install the ownCloud Desktop Synchronization Client and access the server.
+Users can install the ownCloud Desktop Synchronization Client to access the server.
 
 https://doc.owncloud.com/desktop/2.5/index.html
 
