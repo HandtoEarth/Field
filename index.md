@@ -1,4 +1,4 @@
-### ownCloud 10.0.10: Quick Start Guide ###
+% ownCloud 10.0.10: Quick Start Guide 
 
 # Overview 
 
