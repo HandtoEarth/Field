@@ -1,3 +1,10 @@
+Document Title
+==============
+
+***This is a subtitle***
+
+**Author:** *Suzanne Burns*
+
 % ownCloud 10.0.10: Quick Start Guide 
 
 # Overview 
