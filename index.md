@@ -7,7 +7,7 @@ ownCloud 10.0.10
 
 # Overview 
 
-This Quick Start Guide is a step-by-step guide for system administrators to install and configure..... After completing this guide, you will After completing this guide, you will.... which can be scaled ed and further configured as needed.     
+This Quick Start Guide is a step-by-step guide for system administrators to install and configure *lorem ipsum* After completing this guide, you will *lorem ipsum* which can be scaled ed and further configured as needed.     
 
 The document takes you through the following tasks:  
 
