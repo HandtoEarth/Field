@@ -19,10 +19,12 @@ The document takes you through the following:
 
 # 2. Installing ownCloud 
 
-1. Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. It only installs ownCloud however, and does not install Apache, a database, or any of the required PHP dependencies. These must be installed using a classic LAMP stack. See Linux Package Manager Installation for more information about package managers. 
+Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. See Linux Package Manager Installation for more information about package managers. Package managers are downloaded in ownCloud's Download Center (https://owncloud.org/download/).
 
-2. If there are no packages for your Linux distribution, or you prefer installing from the source tarball, you may prefer to install from source using a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP). This allows you to create your own custom LAMP stack without dependency conflicts with the ownCloud package. See *Manual Installation on Linux* for a step by step guide to installing your own LAMP stack.  
-3. After you have installed the LAMP stack, you must then update the package manager's configuration. Configurations (http://download.owncloud.org/download/repositories/10.0/owncloud/) are available for the following Linux distributions:
+> The package manager only installs ownCloud; it does not install Apache, a database, or any of the required PHP dependencies. These must be installed using a classic LAMP stack. 
+
+2. If there are no packages for your Linux distribution, you may prefer to install from source using a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP). This allows you to create your own custom LAMP stack without dependency conflicts with the ownCloud package. See *Manual Installation on Linux* for a step by step guide to installing your own LAMP stack and installing from source.  
+3. After you have installed the LAMP stack, you must then update the package manager's configuration. The folliowing  (http://download.owncloud.org/download/repositories/10.0/owncloud/) are available for the following Linux distributions:
 
    + Ubuntu 14.04 & 16.04
    + Debian 7 & 8
