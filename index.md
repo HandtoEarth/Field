@@ -4,7 +4,7 @@ ownCloud 10.0.10: A Quick Start Guide
 **Author:** *Suzanne Burns* 
 
 
-# 1. Overview 
+# Overview 
 
 ownCloud is a file sharing server that puts the control and security of your own data back into your hands. ownCloud includes the ownCloud server, which runs on Linux, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.
 
@@ -15,9 +15,9 @@ The document takes you through the following:
 + Installing ownCloud on Linux
 + Setting Up the Proxy Server 
 + Setting Up a User in ownCloud
-+ For the User: Connecting to the Owncloud Server
++ Connecting to the Owncloud Server Using the Desktop Client
 
-# 2. Installing ownCloud 
+# Installing ownCloud 
 
 Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. See Linux Package Manager Installation for more information about package managers. Package managers are downloaded in ownCloud's Download Center (https://owncloud.org/download/).
 
@@ -54,18 +54,18 @@ https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/config_sam
 
 https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/config_sample_php_parameters.html#proxy-configurations
 
-# 4. Setting Up a User
+# Setting Up a User
 
 You can set up a new user account in the User management page of your ownCloud Web UI. 
 
 User accounts have the following properties:
 
-+ Login Name (Username): The unique ID of an ownCloud user, and it cannot be changed. 
-+ Full Name: The user’s display name that appears on file shares, the ownCloud Web interface, and emails. Admins and users may change the Full Name anytime. If the Full Name is not set it defaults to the login name. 
-+ Password: The admin sets the new user’s first password. Both the user and the admin can change the user’s password at anytime. 
-+ Groups: You may create groups, and assign group memberships to users. By default new users are not assigned to any groups. 
-+ Group Admin: Group admins are granted administrative privileges on specific groups, and can add and remove users from their groups. 
-+ Quota: The maximum disk space assigned to each user. Any user that exceeds the quota cannot upload or sync data. You have the the option to include external storage in user quotas. 
++ **Login Name (Username)**: The unique ID of an ownCloud user; it cannot be changed. 
++ **Full Name**: The user’s display name that appears on file shares, the ownCloud Web interface, and emails. Admins and users may change the Full Name anytime. If the Full Name is not set it defaults to the login name. 
++ **Password**: The admin sets the new user’s first password. Both the user and the admin can change the user’s password at anytime. 
++ **Groups**: You may create groups, and assign group memberships to users. By default new users are not assigned to any groups. 
++ **Group Admin**: Group admins are granted administrative privileges on specific groups, and can add and remove users from their groups. 
++ **Quota**: The maximum disk space assigned to each user. Any user that exceeds the quota cannot upload or sync data. You have the the option to include external storage in user quotas. 
 
 To create a new user account: 
 1. Enter the new user’s Login Name and their initial Password. 
@@ -77,9 +77,11 @@ If you select Send email to new user in the control panel on the lower left side
 
 See User Management for in-depth information about user management. https://doc.owncloud.org/server/9.1/admin_manual/configuration_user/user_configuration.html 
 
-# 5. Logging in as a User
+# Connecting to the Owncloud Server Using the Desktop Client
 
-Once you have created the user account, the user will be able to log in and access the server. All the user needs is *lorem ipsum* is a Linux client running Mozilla Firefox or a Windows client running Internet Explorer. 
+Once you have created the user account, the user can install the ownCloud Desktop Synchronization Client and access the server.
 
-Lorem ipsum
+https://doc.owncloud.com/desktop/2.5/index.html
+
+https://doc.owncloud.com/desktop/2.5/installing.html#installation-wizard
 
