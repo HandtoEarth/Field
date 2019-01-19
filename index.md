@@ -27,42 +27,42 @@ If you have a suggestion for improving the documentation, we would love to hear 
 
 Lorem ipsum
 
-## Configure Apache Web Server
+## 2.1 Configure Apache Web Server
 
 Lorem ipsum
 
-### Additional Apache Configurations
+### 2.1.1 Additional Apache Configurations
 
 Lorem ipsum
 
-### Multi-Processing Module (MPM)
+### 2.1.2 Multi-Processing Module (MPM)
 
 Lorem ipsum
 
-## Enable SSL
+## 2.2 Enable SSL
 
 Lorem ipsum
 
-## Run the Installation Wizard
+## 2.3 Run the Installation Wizard
 
 Lorem ipsum
 
-## Set Strong Directory Permissions
+## 2.4 Set Strong Directory Permissions
 
 Lorem ipsum
 
-## Managing Trusted Domains
+## 2.5 Managing Trusted Domains
 
 Lorem ipsum
 
-# Setting Up a Proxy Server 
+# 3. Setting Up the Proxy Server 
 
 Lorem ipsum 
 
-# Setting Up A User
+# 4. Setting Up a User
 
 Lorem ipsum
 
-# For the User: Accessing the Server
+# 5. For the User: Accessing the Server
 
 Lorem ipsum
