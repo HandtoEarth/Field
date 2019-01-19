@@ -15,7 +15,7 @@ The document takes you through the following:
 + Installing ownCloud on Linux
 + Setting Up the Proxy Server 
 + Setting Up a User in ownCloud
-+ Logging in as a User
++ For the User: Connecting to the Owncloud Server
 
 # 2. Installing ownCloud 
 
@@ -48,9 +48,34 @@ Installing ownCloud on Linux from our Open Build Service packages is the preferr
 
 Lorem ipsum 
 
+https://doc.owncloud.org/server/10.0/admin_manual/configuration/ldap/ldap_proxy_cache_server_setup.html#configure-the-server
+
+https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/config_sample_php_parameters.html
+
+https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/config_sample_php_parameters.html#proxy-configurations
+
 # 4. Setting Up a User
 
-Lorem ipsum
+You can set up a new user account in the User management page of your ownCloud Web UI. 
+
+User accounts have the following properties:
+
++ Login Name (Username): The unique ID of an ownCloud user, and it cannot be changed. 
++ Full Name: The user’s display name that appears on file shares, the ownCloud Web interface, and emails. Admins and users may change the Full Name anytime. If the Full Name is not set it defaults to the login name. 
++ Password: The admin sets the new user’s first password. Both the user and the admin can change the user’s password at anytime. 
++ Groups: You may create groups, and assign group memberships to users. By default new users are not assigned to any groups. 
++ Group Admin: Group admins are granted administrative privileges on specific groups, and can add and remove users from their groups. 
++ Quota: The maximum disk space assigned to each user. Any user that exceeds the quota cannot upload or sync data. You have the the option to include external storage in user quotas. 
+
+To create a new user account: 
+1. Enter the new user’s Login Name and their initial Password. 
+> Login names may contain letters, numbers, dashes, underscores, periods, and @ signs. After creating the user, you can fill in their Full Name if it is different than the login name, or leave it for the user to complete. 
+2. Assign Groups memberships as needed.
+3. Click the Create button.  
+
+If you select Send email to new user in the control panel on the lower left sidebar, you can also enter the new user’s email address, and ownCloud will automatically send them a notification with their new login information. 
+
+See User Management for in-depth information about user management. https://doc.owncloud.org/server/9.1/admin_manual/configuration_user/user_configuration.html 
 
 # 5. Logging in as a User
 
