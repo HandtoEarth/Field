@@ -1,3 +1,7 @@
-# README: Some Notes About My Process
+# Some Notes About My Process in Writing this Document
 
-This space intentionally left black
+Lorem ipsum 
+
+ + Lorem ipsum 
+ + Lorem ipsum 
+ + Lorem ipsum
