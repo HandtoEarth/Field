@@ -1,13 +1,20 @@
-# By William Blake
+# ownCloud 10.0.10  
+## Quick Start Guide
 
-The Angel that presided ‘oer my birth  
-Said, “Little creature, form’d of Joy and Mirth,  
-“Go love without the help of any Thing on Earth.”  
+This document is a step-by-step guide for system administrators to install and configure..... After completing this guide, you will After completing this guide, you will.... which can be scalThe Quick Start Guide takes you through the following tasks:  
 
-## I like markdown
++ Lorem ipsum
++ Lorem ipsum
++ Lorem ipsumed and further configured as needed.
 
-### Wow I like markdown!
+## Overview 
 
-#### Markdown is awesome!!
+The Quick Start Guide takes you through the following tasks:  
 
-> Testing some of the Markdown syntax I will be using. Oh, look blockquotes! I suspect this will come in handy! And **BOLD** and *italic* including *really* nice italics!
++ Lorem ipsum
++ Lorem ipsum
++ Lorem ipsum
+
+## We would love your feedback!
+
+If you have a suggestion for improving the documentation, we would love to hear from you! 
