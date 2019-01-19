@@ -1,11 +1,9 @@
-Document Title
+ownCloud 10.0.10
 ==============
 
-***This is a subtitle***
+***A Quick Start Guide***
 
-**Author:** *Suzanne Burns*
-
-% ownCloud 10.0.10: Quick Start Guide 
+**Author:** *Suzanne Burns* 
 
 # Overview 
 
