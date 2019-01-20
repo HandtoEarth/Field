@@ -79,13 +79,13 @@ User accounts have the following properties:
 > See [User Management](https://doc.owncloud.org/server/9.1/admin_manual/configuration_user/user_configuration.html) for in-depth information about user management. 
 
 To create a new user account: 
-1. Enter the new user’s Login Name and their initial Password. 
+1. Enter the new user’s login name and their initial password in the fields provided. 
 
 > Login names may contain letters, numbers, dashes, underscores, periods, and at (@) signs. After creating the user account, you can fill in their Full Name if it is different than the login name, or leave it for the user to complete. 
 
-2. Assign Groups memberships as needed in the Users dropdown.
+2. Assign group memberships as needed in the Users dropdown.
 3. Click the Create button.
-4. To automatically send the user a notification with their new login information, select Send Email to new user in the control panel on the lower left sidebar and enter the new user’s email address. 
+4. To automatically send the user a notification with their new login information, select Send Email in the control panel on the lower left sidebar and enter the new user’s email address. 
 
 <a name="deckofficer"></a>
 # Installing the Desktop Synchronization Client
