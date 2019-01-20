@@ -8,7 +8,7 @@ ownCloud 10.0.10: A Quick Start Guide
 
 ownCloud is a file sharing server that puts the control and security of your own data back into your hands. It includes the ownCloud server, which runs on Linux, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.
 
-This quick start serves as a step-by-step guide to installing it from ownCloud's Open Build Service packages. It also covers how to configure the proxy server, set the user in ownCloud, and how users can install the Desktop Sychronization Client to access the server.
+This quick start serves as a step-by-step guide to installing it from ownCloud's Open Build Service packages. It also covers how to configure the proxy server, set the user in ownCloud, and how users can install the Desktop Sychronization Client to access the server:
 
 + [Installing ownCloud on Linux](#install)
 + Setting Up the Proxy Server 
@@ -43,7 +43,8 @@ Installing ownCloud on Linux from our Open Build Service packages is the preferr
 
 5. You’re now finished and can start using your new ownCloud server! Of course, there is much more that you can do to set up your ownCloud server for best performance and security. The Admistration Manual provides in-depth instructions that covers cover important installation and post-installation steps. https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html#in-depth-guide
 
-# 3. Setting Up the Proxy Server 
+<a name="proxy"></a>
+# Setting Up the Proxy Server 
 
 Lorem ipsum 
 
@@ -53,6 +54,7 @@ https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/config_sam
 
 https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/config_sample_php_parameters.html#proxy-configurations
 
+<a name="user"></a>
 # Setting Up a User
 
 You can set up a new user account in the User management page of your ownCloud Web UI. 
@@ -78,6 +80,7 @@ If you select Send email to new user in the control panel on the lower left side
 
 See User Management for in-depth information about user management. https://doc.owncloud.org/server/9.1/admin_manual/configuration_user/user_configuration.html 
 
+<a name="deckofficer"></a>
 # Installing the Desktop Synchronization Client
 
 Users can install the ownCloud Desktop Synchronization Client to access the server.
