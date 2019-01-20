@@ -1,4 +1,4 @@
-# Some Notes About My Process!
+# Some Notes About My Process
 
 Lorem ipsum 
 
