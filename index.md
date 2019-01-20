@@ -50,17 +50,60 @@ Installing ownCloud on Linux from our Open Build Service packages is the preferr
 5. You’re now finished and can start using your new ownCloud server! Of course, there is much more that you can do to set up your ownCloud server for best performance and security. The Administration Manual provides [in-depth instructions](https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html#in-depth-guide) that covers important installation and post-installation steps. 
 
 <a name="proxy"></a>
-# Setting Up the Proxy Server 
+# Configuring the Proxy Server 
 
-Lorem ipsum 
+ownCloud uses the config/config.php file to control server operations. See [lorem ipsum](https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/config_sample_php_parameters.html) in the Server Configuration section of the Administration Manual for more information about configurable parameters within ownCloud, as well as information about ownCloud's default values (with examples). Most options are configurable on your Admin page, so it is usually not necessary to edit config/config.php.
 
-https://doc.owncloud.org/server/10.0/admin_manual/configuration/index.html
+One essential configuration in setting up ownCloud is to configure the proxy server. These setting allow you to enable users to connect to the Owncloud server using the server's IP address and specify the port.
 
-https://doc.owncloud.org/server/10.0/admin_manual/configuration/ldap/ldap_proxy_cache_server_setup.html#configure-the-server
+> 'overwritehost' => '',
 
-https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/config_sample_php_parameters.html
+The automatic hostname detection of ownCloud can fail in certain reverse proxy and CLI/cron situations. The proxy settings allow you to manually override the automatic detection; for example www.example.com, or specify the port www.example.com:8080.
 
-https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/config_sample_php_parameters.html#proxy-configurations
+> 'overwriteprotocol' => '',
+
+When generating URLs, ownCloud attempts to detect whether the server is accessed via https or http. However, if ownCloud is behind a proxy and the proxy handles the https calls, ownCloud would not know that ssl is in use, which would result in incorrect URLs being generated.
+
+Valid values are http and https.
+
+> 'overwritewebroot' => '',
+
+ownCloud attempts to detect the webroot for generating URLs automatically.
+
+For example, if www.example.com/owncloud is the URL pointing to the ownCloud instance, the webroot is /owncloud. When proxies are in use, it may be difficult for ownCloud to detect this parameter, resulting in invalid URLs.
+
+> 'overwritecondaddr' => '',
+
+This option allows you to define a manual override condition as a regular expression for the remote IP address. The keys overwritewebroot, overwriteprotocol, and overwritehost are subject to this condition.
+
+For example, defining a range of IP addresses starting with 10.0.0. and ending with 1 to 3: * ^10\.0\.0\.[1-3]$a
+
+> 'overwrite.cli.url' => '',
+
+Use this configuration parameter to specify the base URL for any URLs which are generated within ownCloud using any kind of command line tools (cron or occ). The value should contain the full base URL: https://www.example.com/owncloud As an example, alerts shown in the browser to upgrade an app are triggered by a cron background process and therefore uses the url of this key, even if the user has logged on via a different domain defined in key trusted_domains. When the user clicks an alert like this, he will be redirected to that URL and must logon again.
+
+> 'htaccess.RewriteBase' => '/',
+
+To have clean URLs without /index.php this parameter needs to be configured.
+
+This parameter will be written as “RewriteBase” on update and installation of ownCloud to your .htaccess file. While this value is often simply the URL path of the ownCloud installation it cannot be set automatically properly in every scenario and needs thus some manual configuration.
+
+In a standard Apache setup this usually equals the folder that ownCloud is accessible at. So if ownCloud is accessible via “https://mycloud.org/owncloud” the correct value would most likely be “/owncloud”. If ownCloud is running under “https://mycloud.org/” then it would be “/”.
+
+Note that the above rule is not valid in every case, as there are some rare setup cases where this may not apply. However, to avoid any update problems this configuration value is explicitly opt-in.
+
+After setting this value run occ maintenance:update:htaccess. Now, when the following conditions are met ownCloud URLs won’t contain index.php:
+
+   + mod_rewrite is installed
+   + mod_env is installed
+
+> 'proxy' => '',
+
+The URL of your proxy server, for example proxy.example.com:8081.
+
+> 'proxyuserpwd' => '',
+
+The optional authentication for the proxy to use to connect to the internet. The format is: username:password.
 
 <a name="user"></a>
 # Setting Up a User
