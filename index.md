@@ -47,7 +47,7 @@ Installing ownCloud on Linux from our Open Build Service packages is the preferr
 
 > Warning: If you are planning to use the installation wizard, we strongly encourage you to protect it, through some form of password authentication, or access control. If the installer is left unprotected when exposed to the public internet, there is the possibility that a malicious actor could finish the installation and block you out — or worse. So please ensure that only you — or someone from your organization — can access the web installer. 
 
-5. You’re now finished and can start using your new ownCloud server! Of course, there is much more that you can do to set up your ownCloud server for best performance and security. The Admistration Manual provides [in-depth instructions](https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html#in-depth-guide) that covers important installation and post-installation steps. 
+5. You’re now finished and can start using your new ownCloud server! Of course, there is much more that you can do to set up your ownCloud server for best performance and security. The Administration Manual provides [in-depth instructions](https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html#in-depth-guide) that covers important installation and post-installation steps. 
 
 <a name="proxy"></a>
 # Setting Up the Proxy Server 
