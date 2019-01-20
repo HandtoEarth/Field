@@ -81,18 +81,16 @@ User accounts have the following properties:
 To create a new user account: 
 1. Enter the new user’s Login Name and their initial Password. 
 
-> Login names may contain letters, numbers, dashes, underscores, periods, and @ signs. After creating the user, you can fill in their Full Name if it is different than the login name, or leave it for the user to complete. 
+> Login names may contain letters, numbers, dashes, underscores, periods, and at (@) signs. After creating the user account, you can fill in their Full Name if it is different than the login name, or leave it for the user to complete. 
 
-2. Assign Groups memberships as needed.
-3. Click the Create button. 
-
-> If you select Send email to new user in the control panel on the lower left sidebar, you can also enter the new user’s email address, and ownCloud will automatically send them a notification with their new login information.  
+2. Assign Groups memberships as needed in the Users dropdown.
+3. Click the Create button.
+4. To automatically send the user a notification with their new login information, select Send Email to new user in the control panel on the lower left sidebar and enter the new user’s email address. 
 
 <a name="deckofficer"></a>
 # Installing the Desktop Synchronization Client
 
 Users can install the ownCloud Desktop Synchronization Client to access the server. 
-Users can install the ownCloud Desktop Synchronization Client to access the s
 
 https://doc.owncloud.com/desktop/2.5/index.html
 
