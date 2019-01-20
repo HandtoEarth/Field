@@ -11,9 +11,9 @@ ownCloud is a file sharing server that puts the control and security of your own
 This quick start serves as a step-by-step guide to installing it from ownCloud's Open Build Service packages. It also covers how to configure the proxy server, set the user in ownCloud, and how users can install the Desktop Sychronization Client to access the server:
 
 + [Installing ownCloud on Linux](#install)
-+ Setting Up the Proxy Server 
-+ Setting Up a User in ownCloud
-+ Installing the Desktop Synchronization Client 
++ [Setting Up the Proxy Server](#proxy) 
++ [Setting Up a User in ownCloud](#user)
++ [Installing the Desktop Synchronization Client](#deckofficer) 
 
 <a name="install"></a>
 # Installing ownCloud 
