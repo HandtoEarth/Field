@@ -15,9 +15,9 @@ This quick start serves as a step-by-step guide to installing it from ownCloud's
 + Setting Up a User in ownCloud
 + Installing the Desktop Synchronization Client 
 
-# <a name="install></a>Installing ownCloud 
+# Installing ownCloud 
 
-Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. See Linux Package Manager Installation for more information about package managers. Package managers are downloaded in ownCloud's [Download Center](https://owncloud.org/download/).
+<a name="install></a>Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. See Linux Package Manager Installation for more information about package managers. Package managers are downloaded in ownCloud's [Download Center](https://owncloud.org/download/).
 
 > The package manager only installs ownCloud; it does not install Apache, a database, or any of the required PHP dependencies. These must be installed using a classic LAMP stack. 
 
