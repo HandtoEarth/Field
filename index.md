@@ -6,11 +6,9 @@ ownCloud 10.0.10: A Quick Start Guide
 
 # Overview 
 
-ownCloud is a file sharing server that puts the control and security of your own data back into your hands. ownCloud includes the ownCloud server, which runs on Linux, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.
+ownCloud is a file sharing server that puts the control and security of your own data back into your hands. It includes the ownCloud server, which runs on Linux, client applications for Microsoft Windows, Mac OS X and Linux, and mobile clients for the Android and Apple iOS operating systems.
 
-This quick start is written for system administrators, and serves as a step-by-step guide to installing and configuring it from ownCloud's Open Build Service packages. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. 
-
-The document takes you through the following:  
+This quick start serves as a step-by-step guide to installing it from ownCloud's Open Build Service packages. It also covers how to configure the proxy server, set the user in ownCloud, and how users can install the Desktop Sychronization Client to access the server.
 
 + Installing ownCloud on Linux
 + Setting Up the Proxy Server 
@@ -19,7 +17,7 @@ The document takes you through the following:
 
 # Installing ownCloud 
 
-Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. See Linux Package Manager Installation for more information about package managers. Package managers are downloaded in ownCloud's Download Center (https://owncloud.org/download/).
+Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. See Linux Package Manager Installation for more information about package managers. Package managers are downloaded in ownCloud's [Download Center](https://owncloud.org/download/).
 
 > The package manager only installs ownCloud; it does not install Apache, a database, or any of the required PHP dependencies. These must be installed using a classic LAMP stack. 
 
