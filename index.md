@@ -15,15 +15,20 @@ This quick start serves as a step-by-step guide to installing it from ownCloud's
 + [Setting Up a User in ownCloud](#user)
 + [Installing the Desktop Synchronization Client](#deckofficer) 
 
+> Need enterprise features? See [Installing & Upgrading ownCloud Enterprise Edition](https://doc.owncloud.org/server/10.0/admin_manual/enterprise/installation/install.html).
+
 <a name="install"></a>
 # Installing ownCloud 
 
-Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. See Linux Package Manager Installation for more information about package managers. Package managers are downloaded in ownCloud's [Download Center](https://owncloud.org/download/).
+Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. See [Linux Package Manager Installation](https://doc.owncloud.org/server/10.0/admin_manual/installation/linux_installation.html) for more information about package managers. 
 
-> The package manager only installs ownCloud; it does not install Apache, a database, or any of the required PHP dependencies. These must be installed using a classic LAMP stack. 
+1. Download the package manager you want to use from ownCloud's ownCloud's [Download Center](https://owncloud.org/download/). 
 
-2. If there are no packages for your Linux distribution, you may prefer to install from source using a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP). This allows you to create your own custom LAMP stack without dependency conflicts with the ownCloud package. See *Manual Installation on Linux* for a step by step guide to installing your own LAMP stack and installing from source.  
-3. After you have installed the LAMP stack, you must then update the package manager's configuration. The folliowing  (http://download.owncloud.org/download/repositories/10.0/owncloud/) are available for the following Linux distributions:
+> Note: The package manager only installs ownCloud; it does not install Apache, a database, or any of the required PHP dependencies. These must be installed using a classic LAMP stack (Linux, Apache, MySQL/MariaDB, PHP). 
+
+2. Install the LAMP stack. If there are no packages for your Linux distribution, you may prefer to install from source. This allows you to create your own custom LAMP stack without dependency conflicts with the ownCloud package. See [Manual Installation on Linux](https://doc.owncloud.org/server/10.0/admin_manual/installation/source_installation.html) for a step by step guide to installing your own LAMP stack and installing from source.  
+
+3. After you have installed the LAMP stack, you must then update the [package manager's configuration](http://download.owncloud.org/download/repositories/10.0/owncloud/). Configurations  are available for the following Linux distributions:
 
    + Ubuntu 14.04 & 16.04
    + Debian 7 & 8
@@ -32,21 +37,24 @@ Installing ownCloud on Linux from our Open Build Service packages is the preferr
    + SLES 11SP4 & 12SP2
    + openSUSE Leap 42.2 & 42.3
 
-4.  Once your package manager has been updated, follow the rest of the instructions included in the configuration to install ownCloud. 
-5.  When the ownCloud prerequisites are fulfilled and all ownCloud files are installed, the last step to completing the installation is running the Installation Wizard. This involves just three steps:
+4.  Once your package manager's configuration has been updated, follow the instructions included in the configuration to install ownCloud. 
 
-   1. Point your web browser to http://localhost/owncloud
+5.  When all ownCloud files are installed, the last step to completing the installation is running the Installation Wizard. This involves just three steps:
+
+   1. Point your web browser to http://localhost/owncloud.
    2. Enter your desired administrator’s username and password.
-   3. Click “Finish Setup”.
+   3. Click the Finish Setup button.
 
 > Warning: If you are planning to use the installation wizard, we strongly encourage you to protect it, through some form of password authentication, or access control. If the installer is left unprotected when exposed to the public internet, there is the possibility that a malicious actor could finish the installation and block you out — or worse. So please ensure that only you — or someone from your organization — can access the web installer. 
 
-5. You’re now finished and can start using your new ownCloud server! Of course, there is much more that you can do to set up your ownCloud server for best performance and security. The Admistration Manual provides in-depth instructions that covers cover important installation and post-installation steps. https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html#in-depth-guide
+5. You’re now finished and can start using your new ownCloud server! Of course, there is much more that you can do to set up your ownCloud server for best performance and security. The Admistration Manual provides [in-depth instructions](https://doc.owncloud.org/server/10.0/admin_manual/installation/installation_wizard.html#in-depth-guide) that covers important installation and post-installation steps. 
 
 <a name="proxy"></a>
 # Setting Up the Proxy Server 
 
 Lorem ipsum 
+
+https://doc.owncloud.org/server/10.0/admin_manual/configuration/index.html
 
 https://doc.owncloud.org/server/10.0/admin_manual/configuration/ldap/ldap_proxy_cache_server_setup.html#configure-the-server
 
@@ -57,7 +65,7 @@ https://doc.owncloud.org/server/9.1/admin_manual/configuration_server/config_sam
 <a name="user"></a>
 # Setting Up a User
 
-You can set up a new user account in the User management page of your ownCloud Web UI. 
+You can set up new user accounts in the User management page of your ownCloud Web UI. 
 
 User accounts have the following properties:
 
@@ -68,22 +76,23 @@ User accounts have the following properties:
 + **Group Admin**: Group admins are granted administrative privileges on specific groups, and can add and remove users from their groups. 
 + **Quota**: The maximum disk space assigned to each user. Any user that exceeds the quota cannot upload or sync data. You have the the option to include external storage in user quotas. 
 
+> See [User Management](https://doc.owncloud.org/server/9.1/admin_manual/configuration_user/user_configuration.html) for in-depth information about user management. 
+
 To create a new user account: 
 1. Enter the new user’s Login Name and their initial Password. 
 
 > Login names may contain letters, numbers, dashes, underscores, periods, and @ signs. After creating the user, you can fill in their Full Name if it is different than the login name, or leave it for the user to complete. 
 
 2. Assign Groups memberships as needed.
-3. Click the Create button.  
+3. Click the Create button. 
 
-If you select Send email to new user in the control panel on the lower left sidebar, you can also enter the new user’s email address, and ownCloud will automatically send them a notification with their new login information. 
-
-See User Management for in-depth information about user management. https://doc.owncloud.org/server/9.1/admin_manual/configuration_user/user_configuration.html 
+> If you select Send email to new user in the control panel on the lower left sidebar, you can also enter the new user’s email address, and ownCloud will automatically send them a notification with their new login information.  
 
 <a name="deckofficer"></a>
 # Installing the Desktop Synchronization Client
 
-Users can install the ownCloud Desktop Synchronization Client to access the server.
+Users can install the ownCloud Desktop Synchronization Client to access the server. 
+Users can install the ownCloud Desktop Synchronization Client to access the s
 
 https://doc.owncloud.com/desktop/2.5/index.html
 
