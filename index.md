@@ -56,7 +56,7 @@ ownCloud uses the config/config.php file to control server operations. See [Core
 
 Most options are configurable on your Admin page, so it is usually not necessary to edit config/config.php. One essential configuration in setting up ownCloud is to configure the proxy server. These setting allow you to enable users to connect to the Owncloud server using the server's IP address and specify the port.
 
-Options are as follows:
+You can configure the following:
 
 > 'overwritehost' => '',
 
@@ -104,7 +104,7 @@ This is the optional authentication for the proxy to use to connect to the inter
 <a name="user"></a>
 # Setting Up a User
 
-You can set up new user accounts in the User Management page of your ownCloud Web UI. 
+You can set up new user accounts in the User Management page of your ownCloud Web UI. See [User Management](https://doc.owncloud.org/server/9.1/admin_manual/configuration_user/user_configuration.html) in the Server Administration Manual for more detailed information about managing user settings. 
 
 User accounts have the following properties:
 
@@ -115,33 +115,41 @@ User accounts have the following properties:
 + **Group Admin**: Group admins are granted administrative privileges on specific groups, and can add and remove users from their groups. 
 + **Quota**: The maximum disk space assigned to each user. Any user that exceeds the quota cannot upload or sync data. You have the the option to include external storage in user quotas. 
 
-> See [User Management](https://doc.owncloud.org/server/9.1/admin_manual/configuration_user/user_configuration.html) in the Server Administration Manual for in-depth information about managing user settings. 
-
 To create a new user account: 
 1. Enter the new user’s login name and their initial password in the fields provided. 
 
-> Login names may contain letters, numbers, dashes, underscores, periods, and at (@) signs. After creating the user account, you can fill in their Full Name if it is different than the login name, or leave it for the user to complete. 
+> Login names may contain letters, numbers, dashes, underscores, periods, and at (@) signs. After creating the user account, you can fill in their *Full Name* if it is different than the login name, or leave it for the user to complete. 
 
 2. Assign group memberships as needed in the Users dropdown.
-3. Click the Create button.
-4. To automatically send the user a notification with their new login information, select Send Email in the control panel on the lower left sidebar and enter the new user’s email address. 
+3. Click the *Create* button.
+4. To automatically send the user a notification with their new login information, select *Send Email* in the control panel on the lower left sidebar and enter the new user’s email address. 
 
 <a name="deckofficer"></a>
 # Installing the Desktop Synchronization Client
 
-Users can install the ownCloud Desktop Synchronization Client to access the server. the ownCloud Desktop Synchronization Client is avaialble for Microsoft Windows, Mac OS X and Linux. 
+Users can install the *ownCloud Desktop Synchronization Client* to access the server. the *ownCloud Desktop Synchronization Client* is avaialble for Microsoft Windows, Mac OS X and Linux. 
 
-> This quick start guide covers how to install the desktop client. There are also mobile clients for the Android and Apple iOS operating systems, however. See the [ownCloud Server User Manual](https://doc.owncloud.com/server/user_manual/index.html) for more information about ownCloud desktop and mobile clients.
+> There are also mobile clients for the Android and Apple iOS operating systems, however. See the [ownCloud Server User Manual](https://doc.owncloud.com/server/user_manual/index.html) for more information about ownCloud desktop and mobile clients.
 
-1. Download the latest version of the ownCloud Desktop Synchronization Client from the ownCloud's [Download Center](https://owncloud.org/download/). There are clients for Linux, macOS, and Microsoft Windows.
+1. Download the latest version of the *ownCloud Desktop Synchronization Client* from the ownCloud's [Download Center](https://owncloud.org/download/). There are clients for Linux, macOS, and Microsoft Windows.
 
    + Installation on Mac OS X and Windows is the same as for any software application: download the program and then double-click it to launch the installation, and then follow the installation wizard. After it is installed and configured the sync client will automatically keep itself updated. 
 
    + Linux users must follow the instructions on the download page to add the appropriate repository for their Linux distribution, install the signing key, and then use their package managers to install the desktop sync client. Linux users will also update their sync clients via package manager, and the client will display a notification when an update is available. 
 
-2. If you just want to install ownCloud Desktop Synchronization Client on your local system, you can simply launch the .msi file and configure it in the wizard that pops up. See [Customizing the Windows installation](https://doc.owncloud.com/desktop/2.5/installing.html#customizing-the-windows-installation) in the User Manual for more information on these custom settings.
+2. If you just want to install *ownCloud Desktop Synchronization Client* on your local system, you can simply launch the .msi file and configure it in the wizard that pops up. See [Customizing the Windows installation](https://doc.owncloud.com/desktop/2.5/installing.html#customizing-the-windows-installation) in the *User Manual* for more information on these custom settings.
 
-https://doc.owncloud.com/desktop/2.5/index.html
+3. The installation wizard takes you step-by-step through configuration options and account setup. First you need to enter the URL of your ownCloud server in the *Server Address* field. Click the *Next* button to continue.
 
-https://doc.owncloud.com/desktop/2.5/installing.html#installation-wizard
+4. Enter your ownCloud login information in the *Username* and *Password* fields. Click the *Next* button to continue.
+
+5. The “Local Folder Option” screen allows you to choose to sync all of your files on the ownCloud server, or select individual folders to sync. 
+
+   + If you want to sync only specific folders, select *Choose What to Sync* and select the folder you want to include. The option *Sync everything from the server* is the default setting.
+   + The default *Local Folder* is ownCloud, in your home directory. You can change this as needed.
+
+6. When you have completed specifying your sync options, click the *Connect* button. The client will attempt to connect to your ownCloud server. When it is successful you’ll see two buttons, one to connect to your ownCloud Web GUI and one to open your local folder. The sytem will begin synchronizing your files.
+
+Once installed, the user can the *ownCloud Desktop Synchronization Client* to access the server.
+
 
