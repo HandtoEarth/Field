@@ -22,7 +22,7 @@ This quick start serves as a step-by-step guide to installing it from ownCloud's
 
 Installing ownCloud on Linux from our Open Build Service packages is the preferred method. These are maintained by ownCloud engineers, and you can use your package manager to keep your ownCloud server up-to-date. The recommended package to use is *owncloud-files*. See [Linux Package Manager Installation](https://doc.owncloud.org/server/10.0/admin_manual/installation/linux_installation.html) for more information about package managers. 
 
-1. Download the package manager you want to use from ownCloud's ownCloud's [Download Center](https://owncloud.org/download/). 
+1. Download the package manager you want to use from ownCloud's [Download Center](https://owncloud.org/download/). 
 
 > Note: The package manager only installs ownCloud; it does not install Apache, a database, or any of the required PHP dependencies. These must be installed using a classic LAMP stack (Linux, Apache, MySQL/MariaDB, PHP). 
 
@@ -92,15 +92,15 @@ To create a new user account:
 
 Users can install the ownCloud Desktop Synchronization Client to access the server. the ownCloud Desktop Synchronization Client is avaialble for Microsoft Windows, Mac OS X and Linux. 
 
-> Although this quick start focuses on the desktop client, there are also mobile clients for the Android and Apple iOS operating systems. See the [ownCloud Server User Manual](https://doc.owncloud.com/server/user_manual/index.html) for more information about ownCloud desktop and mobile clients.
+> This quick start guide covers how to install the desktop client. There are also mobile clients for the Android and Apple iOS operating systems, however. See the [ownCloud Server User Manual](https://doc.owncloud.com/server/user_manual/index.html) for more information about ownCloud desktop and mobile clients.
 
-1. Download the latest version of the ownCloud Desktop Synchronization Client from the ownCloud download page. There are clients for Linux, macOS, and Microsoft Windows.
+1. Download the latest version of the ownCloud Desktop Synchronization Client from the ownCloud's [Download Center](https://owncloud.org/download/). There are clients for Linux, macOS, and Microsoft Windows.
 
-+ Installation on Mac OS X and Windows is the same as for any software application: download the program and then double-click it to launch the installation, and then follow the installation wizard. After it is installed and configured the sync client will automatically keep itself updated. 
+   + Installation on Mac OS X and Windows is the same as for any software application: download the program and then double-click it to launch the installation, and then follow the installation wizard. After it is installed and configured the sync client will automatically keep itself updated. 
 
-+ Linux users must follow the instructions on the download page to add the appropriate repository for their Linux distribution, install the signing key, and then use their package managers to install the desktop sync client. Linux users will also update their sync clients via package manager, and the client will display a notification when an update is available. 
+   + Linux users must follow the instructions on the download page to add the appropriate repository for their Linux distribution, install the signing key, and then use their package managers to install the desktop sync client. Linux users will also update their sync clients via package manager, and the client will display a notification when an update is available. 
 
-2. If you just want to install ownCloud Desktop Synchronization Client on your local system, you can simply launch the .msi file and configure it in the wizard that pops up. See [Customizing the Windows installation](https://doc.owncloud.com/desktop/2.5/installing.html#customizing-the-windows-installation) in the User Manual for more information on these settings.
+2. If you just want to install ownCloud Desktop Synchronization Client on your local system, you can simply launch the .msi file and configure it in the wizard that pops up. See [Customizing the Windows installation](https://doc.owncloud.com/desktop/2.5/installing.html#customizing-the-windows-installation) in the User Manual for more information on these custom settings.
 
 https://doc.owncloud.com/desktop/2.5/index.html
 
