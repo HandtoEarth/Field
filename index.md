@@ -56,7 +56,7 @@ ownCloud uses the config/config.php file to control server operations. See [Core
 
 Most options are configurable on your *Administration* page, so it is usually not necessary to edit *config/config.php*. One essential configuration in setting up ownCloud is to configure the proxy server. These setting allow you to enable users to connect to the Owncloud server using the server's IP address and specify the port.
 
-You can configure the following:
+You can configure the following parameters for thje proxy server:
 
 > 'overwritehost' => '',
 
@@ -78,7 +78,9 @@ For example, defining a range of IP addresses starting with 10.0.0. and ending w
 
 > 'overwrite.cli.url' => '',
 
-Use this configuration parameter to specify the base URL for any URLs which are generated within ownCloud using any kind of command line tools (*cron* or *occ*). The value should contain the full base URL: https://www.example.com/owncloud. As an example, alerts shown in the browser to upgrade an app are triggered by a cron background process and therefore uses the url of this key, even if the user has logged in via a different domain defined in key trusted_domains. When the user clicks an alert like this, he will be redirected to that URL and must log in again.
+Use this configuration parameter to specify the base URL for any URLs which are generated within ownCloud using any kind of command line tools (*cron* or *occ*). The value should contain the full base URL: https://www.example.com/owncloud. 
+
+As an example, alerts shown in the browser to upgrade an app are triggered by a cron background process and therefore uses the url of this key, even if the user has logged in via a different domain defined in key trusted_domains. When the user clicks an alert like this, they will be redirected to that URL and will need to log in again.
 
 > 'htaccess.RewriteBase' => '/',
 
@@ -123,7 +125,8 @@ To create a new user account:
 
 2. Assign group memberships as needed in the *Users* dropdown.
 3. Click the *Create* button.
-4. After you create the user account you can automatically send the user a notification with their new login information by selecting *Send Email* in the control panel on the lower left sidebar and enter the new user’s email address. 
+
+After you create the user account you can automatically send the user a notification with their new login information by selecting *Send Email* in the control panel on the lower left sidebar and enter the new user’s email address. 
 
 <a name="deckofficer"></a>
 # Installing the Desktop Synchronization Client
@@ -144,12 +147,12 @@ Users can install the *ownCloud Desktop Synchronization Client* to access the se
 
 4. Enter your ownCloud login information in the *Username* and *Password* fields. Click the *Next* button to continue.
 
-5. The “Local Folder Option” screen allows you to choose to sync all of your files on the ownCloud server, or select individual folders to sync. 
+5. The *Local Folder Option* screen allows you to choose to sync all of your files on the ownCloud server, or select individual folders to sync. 
 
    + If you want to sync only specific folders, select *Choose What to Sync* and select the folder you want to include. The option *Sync everything from the server* is the default setting.
    + The default *Local Folder* is ownCloud, in your home directory. You can change this as needed.
 
-6. When you have completed specifying your sync options, click the *Connect* button. The client will attempt to connect to your ownCloud server. When it is successful you’ll see two buttons, one to connect to your ownCloud Web GUI and one to open your local folder. The sytem will begin synchronizing your files.
+6. When you have completed specifying your sync options, click the *Connect* button. The client will attempt to connect to your ownCloud server. When it is successful you’ll see two buttons: one to connect to your ownCloud Web GUI, and one to open your local folder. The sytem will begin synchronizing your files.
 
 Once installed, the user can log in to the *ownCloud Desktop Synchronization Client* and access the server.
 
