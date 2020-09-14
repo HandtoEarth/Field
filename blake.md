@@ -9,7 +9,7 @@ The Human Form, a fiery Forge,
 The Human Face, a Furnace seal'd,  
 The Human Heart, its hungry Gorge.
 
-(A Divine Image, William Blake)
+(*A Divine Image*, William Blake)
 
 
 [ [Home](index.md) ]
