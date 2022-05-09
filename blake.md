@@ -2,7 +2,7 @@
 Cruelty has a Human heart  
 And Jealousy a Human Face,  
 Terror, the Human Form Divine,  
-And Secrecy, [ [the Human Dress](index.md) ].  
+And Secrecy, [the Human Dress](index.md).  
 
 The Human Dress is forgéd Iron,  
 The Human Form, a fiery Forge,  
